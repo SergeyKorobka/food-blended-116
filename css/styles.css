@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #fefefe;
+  color: #2c2c2c;
+}
+
+/*#region reset*/
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+/*#endregion reset*/
+
+/*#region common*/
+
+.container {
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/*#endregion common*/
+
+/*#region header*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 30px;
+}
+
+.header-logo {
+  margin-right: auto;
+  padding: 10px 0;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.header-nav-link {
+  font-size: 14px;
+  padding: 28px 0;
+  display: block;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: #bbf330;
+  text-decoration: underline;
+}
+
+.main-btn {
+  min-width: 98px;
+  padding: 6px 18px;
+  border-radius: 30px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+
+  background-color: #bbf330;
+}
+
+/*#endregion header*/
