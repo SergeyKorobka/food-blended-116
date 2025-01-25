@@ -40,7 +40,7 @@ button {
 /*#region common*/
 
 .container {
-  max-width: 1248px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -75,12 +75,36 @@ button {
   font-size: 14px;
   padding: 28px 0;
   display: block;
+  overflow: hidden;
+  transition: color 250ms ease-in-out;
 }
 
+.header-nav-link .underline {
+  position: relative;
+}
+
+.header-nav-link .underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  width: 100%;
+  transform: translateX(-100%);
+  background-color: #bbf330;
+  transition: transform 250ms ease-in-out;
+}
+
+.header-nav-link .current::after,
+.header-nav-link:hover .underline::after {
+  transform: translateX(0);
+}
+
+.header-nav-link .current,
 .header-nav-link:hover,
 .header-nav-link:focus {
   color: #bbf330;
-  text-decoration: underline;
 }
 
 .main-btn {
@@ -96,3 +120,150 @@ button {
 }
 
 /*#endregion header*/
+
+/*#region product*/
+.product-section {
+  padding: 100px 0;
+}
+
+.product-title {
+  margin-bottom: 20px;
+
+  font-size: 42px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.product-subtitle {
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.product-item {
+  position: relative;
+  width: calc((100% - 64px) / 3);
+  padding: 23px 24px;
+
+  border: 16px solid #ffe550;
+  border-radius: 50%;
+  overflow: hidden;
+
+  transition: border-color 250ms ease-in-out;
+  cursor: pointer;
+}
+
+.product-name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  font-size: 36px;
+  color: #fefefe;
+
+  background: rgba(187, 243, 48, 0.8);
+  text-shadow: 0 0 3px #000;
+  opacity: 0;
+  transform: scale(0);
+
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.product-item:hover .product-name {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.product-item:hover {
+  border-color: #bbf330;
+}
+/*#endregion product*/
+
+/*#region offering*/
+.section-offering {
+  background-color: #ffe550;
+}
+
+.offering-container {
+  display: flex;
+  gap: 90px;
+}
+
+.offering-images {
+  width: 550px;
+  padding: 16px 0 43px;
+  flex-shrink: 0;
+
+  background-image: url(../images/apple.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.offering-content {
+  padding: 99px 35px 79px 0;
+}
+
+.offering-title {
+  margin-bottom: 20px;
+
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.offering-subtitle {
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.offering-list {
+  display: flex;
+  gap: 67px;
+  margin-bottom: 32px;
+}
+
+.offering-item {
+  width: calc((100% - 67px) / 2);
+}
+
+.offering-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 8px;
+  border-radius: 50%;
+
+  background-color: #fefefe;
+}
+
+.offering-icon {
+  fill: #7eb101;
+}
+
+.offering-card-title {
+  margin-bottom: 16px;
+
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.offering-card-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+/*#endregion offering*/
