@@ -37,19 +37,29 @@
 
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./index.html">Home</a>
+              <a class="header-nav-link" href="./index.html"
+                ><span class="underline current">Home</span></a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">About</a>
+              <a class="header-nav-link" href=""
+                ><span class="underline">About</span></a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Service</a>
+              <a class="header-nav-link" href=""
+                ><span class="underline">Service</span></a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Menu</a>
+              <a class="header-nav-link" href=""
+                ><span class="underline">Menu</span></a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">Contact</a>
+              <a class="header-nav-link" href=""
+                ><span class="underline">Contact</span></a
+              >
             </li>
           </ul>
         </nav>
@@ -74,90 +84,112 @@
         </div>
       </section>
 
-      <section>
-        <div class="container">
-          <h2>What’s Special About Our Offerings</h2>
-          <p>
-            With our platform, you can browse through a diverse selection of
-            cuisines and local restaurants, and choose from a variety of dishes
-            that cater to your specific taste buds.
-          </p>
+      <section class="section-offering">
+        <div class="container offering-container">
+          <div class="offering-images"></div>
+          <div class="offering-content">
+            <h2 class="offering-title">What’s Special About Our Offerings</h2>
+            <p class="offering-subtitle">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
+            </p>
 
-          <ul>
-            <li>
-              <h3>Fasest Delivery</h3>
-              <p>
-                Our advanced logistics system and dedicated delivery partners
-                ensure that your meals are delivered to you within 30-minutes.
-              </p>
-            </li>
-            <li>
-              <h3>Easy To Order</h3>
-              <p>
-                You can browse through a wide variety of cuisines and
-                restaurants, select your favorite meals, and place your order in
-                just a few clicks.
-              </p>
-            </li>
-          </ul>
+            <ul class="offering-list">
+              <li class="offering-item">
+                <span class="offering-icon-wrapper">
+                  <svg class="offering-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-rocket"></use>
+                  </svg>
+                </span>
 
-          <button type="button">Order Now</button>
+                <h3 class="offering-card-title">Fasest Delivery</h3>
+                <p class="offering-card-text">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="offering-item">
+                <span class="offering-icon-wrapper">
+                  <svg class="offering-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-touch"></use>
+                  </svg>
+                </span>
+                <h3 class="offering-card-title">Easy To Order</h3>
+                <p class="offering-card-text">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+
+            <button class="main-btn" type="button">Order Now</button>
+          </div>
         </div>
       </section>
 
-      <section>
-        <h2>Some of Our Favorites</h2>
-        <p>Looking for something delicious?</p>
-        <ul>
-          <li>
-            <img
-              src="./images/gamburger-min.jpg"
-              alt="gamburger"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/Pasta-min.jpg"
-              alt="Pasta"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/pizza-min.jpg"
-              alt="Pizza"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/chicken-min.jpg"
-              alt="Chicken"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/salat-min.jpg"
-              alt="Salat"
-              width="315"
-              height="315"
-            />
-          </li>
-          <li>
-            <img
-              src="./images/borshch-min.jpg"
-              alt="borshch"
-              width="315"
-              height="315"
-            />
-          </li>
-        </ul>
+      <section class="section product-section">
+        <div class="container">
+          <h2 class="product-title">Some of Our Favorites</h2>
+          <p class="product-subtitle">Looking for something delicious?</p>
+          <ul class="product-list">
+            <li class="product-item">
+              <img
+                src="./images/gamburger-min.jpg"
+                alt="gamburger"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Gamburger</h3>
+            </li>
+            <li class="product-item">
+              <img
+                src="./images/Pasta-min.jpg"
+                alt="Pasta"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Pasta</h3>
+            </li>
+            <li class="product-item">
+              <img
+                src="./images/pizza-min.jpg"
+                alt="Pizza"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Pizza</h3>
+            </li>
+            <li class="product-item">
+              <img
+                src="./images/chicken-min.jpg"
+                alt="Chicken"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Chicken</h3>
+            </li>
+            <li class="product-item">
+              <img
+                src="./images/salat-min.jpg"
+                alt="Salat"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Salat</h3>
+            </li>
+            <li class="product-item">
+              <img
+                src="./images/borshch-min.jpg"
+                alt="borshch"
+                width="315"
+                height="315"
+              />
+              <h3 class="product-name">Borshch</h3>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
